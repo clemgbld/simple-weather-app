@@ -141,7 +141,5 @@ const weatherInit = async function () {
   }
 };
 
-console.log("Welcome to the application");
-
 weatherInit();
 import "regenerator-runtime/runtime";
