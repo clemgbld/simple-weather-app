@@ -1,0 +1,165 @@
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background: url(img/good-weather.jpg);
+  background-size: cover;
+  transition: all 0.6s ease-in;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 3rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.2rem;
+  color: #1864ab;
+  transition: all 0.6s ease-in;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.city {
+  width: 60vw;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-bottom: solid 0.2rem #fff;
+
+  padding-left: 1rem;
+  background-color: inherit;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.8rem;
+  width: 9rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  padding: 0.8rem;
+  border-radius: 9px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: #1864ab;
+  color: #fff;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #1971c2;
+  color: #e7f5ff;
+  box-shadow: 0 0 0 0.3rem rgba(24, 100, 171, 0.5);
+}
+
+.w-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 40rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 9px;
+  padding: 2rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+
+  border: 0.5rem solid #777;
+  border-top-color: #1864ab;
+  border-bottom-color: #1864ab;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.country-info {
+  display: flex !important;
+  flex-direction: row;
+  gap: 0.2rem;
+  margin-bottom: 3rem;
+}
+
+.city-form {
+  font-size: 3rem;
+
+  transition: all 0.6s ease-in;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0.1rem;
+
+  color: #fff;
+  background-color: #1864ab;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.temp {
+  font-size: 6.4rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.icon {
+  font-size: 8rem;
+  color: #1864ab;
+  margin-bottom: 2.4rem;
+}
+
+.icon-img {
+  width: 13rem;
+  height: 13rem;
+  margin-bottom: 2.4rem;
+}
+.w-comment {
+  font-size: 2.4rem;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.5);
+}
