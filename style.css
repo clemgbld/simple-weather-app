@@ -71,6 +71,7 @@ h1 {
   background-color: #1864ab;
   color: #fff;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #1971c2;
