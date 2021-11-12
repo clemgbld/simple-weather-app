@@ -40,7 +40,7 @@ const loadData = function (jsonData) {
     jsonData.name
   }</p><p class="country">${jsonData.sys.country}</p></div>
   <p class="temp">${Math.round(jsonData.main.temp - 273.15)}&deg;C</p>
-  <img class="icon-img" src="http://openweathermap.org/img/wn/${
+  <img class="icon-img" src="https://openweathermap.org/img/wn/${
     jsonData.weather[0].icon
   }@2x.png" alt="weather-icon">
   <p class="w-comment">${jsonData.weather[0].description}</p>`;
