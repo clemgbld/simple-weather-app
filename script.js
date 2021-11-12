@@ -54,7 +54,7 @@ const weatherScenario = function (jsonData) {
   }
 
   // Mist
-  if (/mist|smoke|smog/gi.test(jsonData.weather[0].description)) {
+  if (/mist|smoke|smog|fog/gi.test(jsonData.weather[0].description)) {
     return changeBackground("#1864ab", "#333", `url(${mist})`);
   }
   // Snow
