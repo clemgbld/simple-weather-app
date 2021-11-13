@@ -58,11 +58,11 @@ const weatherScenario = function (jsonData) {
     return changeBackground("#1864ab", "#333", `url(${mist})`);
   }
   // Snow
-  if (/snow/gi.test(jsonData.weather[0].description)) {
+  if (/snow|sleet/gi.test(jsonData.weather[0].description)) {
     return changeBackground("#1864ab", "#333", `url(${snow})`);
   }
   // rain
-  if (/rain/gi.test(jsonData.weather[0].description)) {
+  if (/rain|drizzle/gi.test(jsonData.weather[0].description)) {
     return changeBackground("#fff", "#fff", `url(${rain})`);
   }
   // night
